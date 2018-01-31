@@ -11,7 +11,7 @@ import PushKit
 import CallKit
 import TwilioVoice
 
-let baseURLString = <#URL TO YOUR ACCESS TOKEN SERVER#>
+let baseURLString = "http://callrecorder.cleverapp.me"
 let accessTokenEndpoint = "/accessToken"
 let twimlParamTo = "to"
 

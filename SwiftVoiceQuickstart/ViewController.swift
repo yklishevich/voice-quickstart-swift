@@ -10,7 +10,7 @@ import AVFoundation
 import PushKit
 import TwilioVoice
 
-let baseURLString = <#URL TO YOUR ACCESS TOKEN SERVER#>
+let baseURLString = "http://callrecorder.cleverapp.me"
 let accessTokenEndpoint = "/accessToken"
 let twimlParamTo = "to"
 
@@ -79,7 +79,7 @@ class ViewController: UIViewController, PKPushRegistryDelegate, TVONotificationD
             
             playOutgoingRingtone(completion: { [weak self] in
                 if let strongSelf = self {
-                    strongSelf.call = TwilioVoice.call(accessToken, params: [twimlParamTo : outgoingValue.text!], delegate: strongSelf)
+                    strongSelf.call = TwilioVoice.call(accessToken, params: [twimlParamTo : strongSelf.outgoingValue.text!], delegate: strongSelf)
                     strongSelf.toggleUIState(isEnabled: false)
                     strongSelf.startSpin()
                 }
