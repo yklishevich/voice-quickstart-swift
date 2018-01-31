@@ -13,6 +13,7 @@
 		24BA343E1D874AC800B0B4F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24BA343D1D874AC800B0B4F7 /* Assets.xcassets */; };
 		24BA34411D874AC800B0B4F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24BA343F1D874AC800B0B4F7 /* LaunchScreen.storyboard */; };
 		24BA34491D874BBD00B0B4F7 /* TwilioLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 24BA34481D874BBD00B0B4F7 /* TwilioLogo.png */; };
+		2B8803BF3C01EEE9D3537633 /* Pods_TwilioVoice_SwiftVoiceCallKitQuickstart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDC2F81C0B08264E78258C30 /* Pods_TwilioVoice_SwiftVoiceCallKitQuickstart.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,9 @@
 		24BA34421D874AC800B0B4F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		24BA34481D874BBD00B0B4F7 /* TwilioLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TwilioLogo.png; sourceTree = "<group>"; };
 		24BA344A1D874D2B00B0B4F7 /* SwiftVoiceCallKitQuickstart.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftVoiceCallKitQuickstart.entitlements; sourceTree = "<group>"; };
+		6A714034A99E125FF7560FEA /* Pods-TwilioVoice-SwiftVoiceCallKitQuickstart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwilioVoice-SwiftVoiceCallKitQuickstart.release.xcconfig"; path = "Pods/Target Support Files/Pods-TwilioVoice-SwiftVoiceCallKitQuickstart/Pods-TwilioVoice-SwiftVoiceCallKitQuickstart.release.xcconfig"; sourceTree = "<group>"; };
+		82BAC9EAF154EA3B2FAA71D5 /* Pods-TwilioVoice-SwiftVoiceCallKitQuickstart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwilioVoice-SwiftVoiceCallKitQuickstart.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TwilioVoice-SwiftVoiceCallKitQuickstart/Pods-TwilioVoice-SwiftVoiceCallKitQuickstart.debug.xcconfig"; sourceTree = "<group>"; };
+		BDC2F81C0B08264E78258C30 /* Pods_TwilioVoice_SwiftVoiceCallKitQuickstart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwilioVoice_SwiftVoiceCallKitQuickstart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B8803BF3C01EEE9D3537633 /* Pods_TwilioVoice_SwiftVoiceCallKitQuickstart.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +79,7 @@
 		45B8A87752EE385BD0514D8C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BDC2F81C0B08264E78258C30 /* Pods_TwilioVoice_SwiftVoiceCallKitQuickstart.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -81,6 +87,8 @@
 		55E4DD2B129E858377D08E95 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				82BAC9EAF154EA3B2FAA71D5 /* Pods-TwilioVoice-SwiftVoiceCallKitQuickstart.debug.xcconfig */,
+				6A714034A99E125FF7560FEA /* Pods-TwilioVoice-SwiftVoiceCallKitQuickstart.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -92,9 +100,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 24BA34451D874AC800B0B4F7 /* Build configuration list for PBXNativeTarget "SwiftVoiceCallKitQuickstart" */;
 			buildPhases = (
+				B97262B884CE7FBB7A2AAA06 /* [CP] Embed Pods Frameworks */,
+				84738AD9045DEDC8D0206446 /* [CP] Check Pods Manifest.lock */,
 				24BA342F1D874AC800B0B4F7 /* Sources */,
 				24BA34301D874AC800B0B4F7 /* Frameworks */,
 				24BA34311D874AC800B0B4F7 /* Resources */,
+				45A3A1CC3A79C19AD67D5B12 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -160,6 +171,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		45A3A1CC3A79C19AD67D5B12 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TwilioVoice-SwiftVoiceCallKitQuickstart/Pods-TwilioVoice-SwiftVoiceCallKitQuickstart-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		84738AD9045DEDC8D0206446 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B97262B884CE7FBB7A2AAA06 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TwilioVoice-SwiftVoiceCallKitQuickstart/Pods-TwilioVoice-SwiftVoiceCallKitQuickstart-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		24BA342F1D874AC800B0B4F7 /* Sources */ = {
@@ -288,6 +347,7 @@
 		};
 		24BA34461D874AC800B0B4F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82BAC9EAF154EA3B2FAA71D5 /* Pods-TwilioVoice-SwiftVoiceCallKitQuickstart.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = SwiftVoiceCallKitQuickstart/SwiftVoiceCallKitQuickstart.entitlements;
@@ -303,6 +363,7 @@
 		};
 		24BA34471D874AC800B0B4F7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A714034A99E125FF7560FEA /* Pods-TwilioVoice-SwiftVoiceCallKitQuickstart.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = SwiftVoiceCallKitQuickstart/SwiftVoiceCallKitQuickstart.entitlements;
