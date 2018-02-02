@@ -382,7 +382,7 @@
 				INFOPLIST_FILE = SwiftVoiceQuickstart/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = LNVSD53B2Q.cleverapp.callrecorder;
+				PRODUCT_BUNDLE_IDENTIFIER = cleverapp.callrecorder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -398,7 +398,7 @@
 				INFOPLIST_FILE = SwiftVoiceQuickstart/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = LNVSD53B2Q.cleverapp.callrecorder;
+				PRODUCT_BUNDLE_IDENTIFIER = cleverapp.callrecorder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};

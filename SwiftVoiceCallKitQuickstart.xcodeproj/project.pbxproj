@@ -128,6 +128,7 @@
 				TargetAttributes = {
 					24BA34321D874AC800B0B4F7 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = LNVSD53B2Q;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
@@ -357,7 +358,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = SwiftVoiceCallKitQuickstart/SwiftVoiceCallKitQuickstart.entitlements;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = LNVSD53B2Q;
 				INFOPLIST_FILE = SwiftVoiceCallKitQuickstart/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -373,7 +374,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = SwiftVoiceCallKitQuickstart/SwiftVoiceCallKitQuickstart.entitlements;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = LNVSD53B2Q;
 				INFOPLIST_FILE = SwiftVoiceCallKitQuickstart/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
