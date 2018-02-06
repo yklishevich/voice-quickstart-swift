@@ -59,7 +59,8 @@ class ViewController: UIViewController, PKPushRegistryDelegate, TVONotificationD
     // MARK: - Helpers -
 
     func fetchAccessToken() -> String? {
-        guard let accessTokenURL = URL(string: baseURLString + accessTokenEndpoint + "?identity=\(clientID)") else {
+        let urlString = baseURLString + accessTokenEndpoint + "?identity=\(clientID!)"
+        guard let accessTokenURL = URL(string: urlString) else {
             return nil
         }
 
