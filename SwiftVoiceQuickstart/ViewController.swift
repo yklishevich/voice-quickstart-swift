@@ -11,7 +11,8 @@ import PushKit
 import TwilioVoice
 
 let baseURLString = "http://callrecorder.cleverapp.me"
-let accessTokenEndpoint = "/accessToken"
+let accessTokenEndpoint = "/accessToken?identity=alice"
+//let accessTokenEndpoint = "/accessToken?identity=bob"
 let twimlParamTo = "to"
 
 class ViewController: UIViewController, PKPushRegistryDelegate, TVONotificationDelegate, TVOCallDelegate, AVAudioPlayerDelegate, UITextFieldDelegate {
