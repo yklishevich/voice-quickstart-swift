@@ -58,6 +58,7 @@ class ViewController: UIViewController, PKPushRegistryDelegate, TVONotificationD
     
     // MARK: - Helpers -
 
+    // http://callrecorder.cleverapp.me/accessToken?identity=iji
     func fetchAccessToken() -> String? {
         let urlString = baseURLString + accessTokenEndpoint + "?identity=\(clientID!)"
         guard let accessTokenURL = URL(string: urlString) else {
