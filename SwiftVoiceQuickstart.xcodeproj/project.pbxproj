@@ -17,6 +17,7 @@
 		8F1A92811DF9001C00609990 /* disconnect.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8F1A927E1DF9001C00609990 /* disconnect.wav */; };
 		8F1A92821DF9001C00609990 /* incoming.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8F1A927F1DF9001C00609990 /* incoming.wav */; };
 		8F1A92831DF9001C00609990 /* outgoing.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8F1A92801DF9001C00609990 /* outgoing.wav */; };
+		A33854FC2029F40500FE0B8D /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33854FB2029F40500FE0B8D /* RegisterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		8F1A927E1DF9001C00609990 /* disconnect.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = disconnect.wav; sourceTree = "<group>"; };
 		8F1A927F1DF9001C00609990 /* incoming.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = incoming.wav; sourceTree = "<group>"; };
 		8F1A92801DF9001C00609990 /* outgoing.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = outgoing.wav; sourceTree = "<group>"; };
+		A33854FB2029F40500FE0B8D /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		E1CA3CFD5BB30008963C7A2C /* Pods_TwilioVoice_SwiftVoiceQuickstart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwilioVoice_SwiftVoiceQuickstart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA652ABBEF03D6D89586C7D5 /* Pods-TwilioVoice-SwiftVoiceQuickstart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwilioVoice-SwiftVoiceQuickstart.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TwilioVoice-SwiftVoiceQuickstart/Pods-TwilioVoice-SwiftVoiceQuickstart.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,6 +75,7 @@
 			children = (
 				24BA344A1D874D2B00B0B4F7 /* SwiftVoiceQuickstart.entitlements */,
 				24BA34361D874AC800B0B4F7 /* AppDelegate.swift */,
+				A33854FB2029F40500FE0B8D /* RegisterViewController.swift */,
 				24BA34381D874AC800B0B4F7 /* ViewController.swift */,
 				24BA343A1D874AC800B0B4F7 /* Main.storyboard */,
 				24BA343D1D874AC800B0B4F7 /* Assets.xcassets */,
@@ -252,6 +255,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A33854FC2029F40500FE0B8D /* RegisterViewController.swift in Sources */,
 				24BA34391D874AC800B0B4F7 /* ViewController.swift in Sources */,
 				24BA34371D874AC800B0B4F7 /* AppDelegate.swift in Sources */,
 			);

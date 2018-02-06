@@ -11,12 +11,14 @@ import PushKit
 import TwilioVoice
 
 let baseURLString = "http://callrecorder.cleverapp.me"
-let accessTokenEndpoint = "/accessToken?identity=alice"
-//let accessTokenEndpoint = "/accessToken?identity=bob"
+let accessTokenEndpoint = "/accessToken"
 let twimlParamTo = "to"
 
 class ViewController: UIViewController, PKPushRegistryDelegate, TVONotificationDelegate, TVOCallDelegate, AVAudioPlayerDelegate, UITextFieldDelegate {
 
+    var clientID: String!
+    
+    @IBOutlet weak var clientIDLabel: UILabel!
     @IBOutlet weak var placeCallButton: UIButton!
     @IBOutlet weak var iconView: UIImageView!
     @IBOutlet weak var outgoingValue: UITextField!
@@ -48,17 +50,16 @@ class ViewController: UIViewController, PKPushRegistryDelegate, TVONotificationD
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        clientIDLabel.text = clientID
+        
         toggleUIState(isEnabled: true)
         outgoingValue.delegate = self
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
+    
+    // MARK: - Helpers -
 
     func fetchAccessToken() -> String? {
-        guard let accessTokenURL = URL(string: baseURLString + accessTokenEndpoint) else {
+        guard let accessTokenURL = URL(string: baseURLString + accessTokenEndpoint + "?identity=\(clientID)") else {
             return nil
         }
 
