@@ -351,6 +351,7 @@ class ViewController: UIViewController, PKPushRegistryDelegate, TVONotificationD
         self.ringtonePlayer?.stop()
         
         do {
+//            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayAndRecord, with: [.mixWithOthers])
             try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayAndRecord)
         } catch {
             NSLog(error.localizedDescription)
@@ -389,6 +390,7 @@ class ViewController: UIViewController, PKPushRegistryDelegate, TVONotificationD
         }
         
         do {
+//            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayAndRecord, with: [.mixWithOthers])
             try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayAndRecord)
         } catch {
             NSLog(error.localizedDescription)
